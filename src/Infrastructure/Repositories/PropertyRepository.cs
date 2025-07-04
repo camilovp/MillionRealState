@@ -64,12 +64,6 @@ namespace RealState.Infrastructure.Repositories
                 p.Images = await _context.PropertyImages
                                      .Find(i => i.IdProperty == p.IdProperty)
                                      .ToListAsync();
-                p.Traces = await _context.PropertyTraces
-                                         .Find(t => t.IdProperty == p.IdProperty)
-                                         .ToListAsync();
-                p.Owner = await _context.Owners
-                                         .Find(o => o.IdOwner == p.IdOwner)
-                                         .FirstOrDefaultAsync();
             }
 
             return list;

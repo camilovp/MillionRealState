@@ -72,11 +72,6 @@ out/
 artifacts/
 
 ############################
-# PropertyImages (local uploads)
-############################
-PropertyImages/
-
-############################
 # Local DBs (optional)
 ############################
 *.mdf
